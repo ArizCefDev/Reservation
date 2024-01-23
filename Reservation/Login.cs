@@ -19,9 +19,9 @@ namespace Reservation
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text=="ariz" && textBox2.Text=="123")
+            if (textBox1.Text == "ariz" && textBox2.Text == "1234")
             {
-                Admin next=new Admin();
+                Admin next = new Admin();
                 next.Show();
             }
             else
