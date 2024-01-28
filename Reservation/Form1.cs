@@ -25,7 +25,7 @@ namespace Reservation
             textBox8.Text = total.ToString();
             string script = @"INSERT INTO Client(Name, Surname, Tel, Person, Day, Date, Floor, Room, CardNo, Price, Status)
                                          VALUES (@name, @surname, @tel, @person, @day, @date, @floor, @room, @cardno, @price, @status)";
-            SqlCommand command = new SqlCommand(script,connect);
+            SqlCommand command = new SqlCommand(script, connect);
             command.Parameters.AddWithValue("@name", textBox1.Text);
             command.Parameters.AddWithValue("@surname", textBox2.Text);
             command.Parameters.AddWithValue("@tel", textBox3.Text);
